@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- __________________________Bootstrap Cdn______________________ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- _____________________________fonts_______________________ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>BikeBazar</title>
     <link rel="stylesheet" href="style.css">
-    <!-- __________________________Bootstrap Cdn______________________ -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
     <!-- _________________________fontawesome cdn_________________________ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -62,7 +63,7 @@
                 <div class="container  ps-5">
                     <p>Computer-controlled digital transistorized with electronic advance</p>
                 <h1>Honda CBR 300R</h1>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua 
+                <p class="">Amet minim mollit non deserunt ullamco est sit aliqua 
                     dolor do amet sint. Velit officia consequat duis enim velit 
                     mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                     <!-- <button class="btn btn-danger">Purchase</button> -->
@@ -83,16 +84,22 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores atque laudantium quidem fuga eos consectetur illo temporibus voluptates laborum omnis!
+        <p class="text-danger">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis molestias quo rem voluptate. Ratione incidunt modi ducimus, enim expedita beatae!</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+       
       </div>
     </div>
   </div>
 </div>
-                    
+        <script>
+          var myModal = document.getElementById('modal-body')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
+        </script>            
                     <!-- ////////////////////////////////////// -->
                 </div>
             </div>
